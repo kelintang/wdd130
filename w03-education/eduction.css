@@ -1,0 +1,20 @@
+body{
+    background-color: pink;
+    text-align: center;
+}
+
+main{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+ol {
+text-align: left;
+}
+
+#quotetwo{
+    color: white;
+    font-size: 50pt;
+
+}
