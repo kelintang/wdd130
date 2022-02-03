@@ -1,0 +1,19 @@
+#top{
+    /* display: block;
+    margin: 0 auto; */
+    width: 100%;
+}
+
+#oneimage, #twoimage, #threeimage{
+    /* display: block; */
+    border-radius: 50%;
+    width: 20%;
+}
+
+#image{
+    background-color: lightgrey;
+    padding: 10px gray;
+    display: flex ;
+    justify-content: space-evenly;
+
+}
