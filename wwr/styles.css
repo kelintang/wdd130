@@ -20,6 +20,8 @@ header {
     text-align: left;
     display: grid;
     grid-template-columns: 150px auto;
+    z-index: 1;
+
 }
 nav {
     display: flex;
@@ -28,7 +30,7 @@ nav {
 }
 
 nav a:hover {
-    background-color: black;
+    background-color: rgba(68, 80, 60, 0.4);
     color: #d9c2a3;
 }
 nav a{
@@ -53,6 +55,7 @@ nav a{
     background-color: #fcfbfb;
     color: cadetblue;
     font-family: "Zilla Slab", Geneva, Tahoma, sans-serif;
+    z-index: 1;
 } 
 .join:hover{
     background-color: #fcfbfb; 
@@ -89,7 +92,7 @@ footer {
     align-items: center;
 }
 .home-title{
-    color: black;
+    color: white;
     font-family: "Comforter";
     font-size: 2em;
     margin-top: 10px;
@@ -106,7 +109,7 @@ footer {
     padding-bottom: 15px;
 }
 h4{
-    color: black;
+    color: white;
     font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
 }
 footer h3{
@@ -116,7 +119,7 @@ footer h3{
     font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
 }
 footer a:hover{
-    color: black;
+    color: #d9c2a3; 
     text-align: left;
 }
 footer h3 a {
@@ -143,7 +146,7 @@ footer .social img   {
 }
 
 #hero-msg h4 {
-    color: black;
+    color: white;
      z-index: 1;
 }
 
@@ -161,6 +164,7 @@ footer .social img   {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
+    z-index: 1;
 }
 
 .logo{
@@ -179,13 +183,14 @@ h1, h2, h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
+
 }
 h2 {
     margin: 0;
 }
 
 h2:hover {
-    background-color: cadetblue;
+    color: cadetblue;
     font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
 } 
 
@@ -203,6 +208,7 @@ h2:hover {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+    z-index: 1;
 }
 .home-grid{
     display:grid;
