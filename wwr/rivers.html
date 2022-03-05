@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/rivers.css">
 </head>
 <body>
     <div id="container">
@@ -32,24 +32,31 @@
             </div>
         </section>
         </div>
-    <main>
-        <section id="river-1">
-            <img class="river" src="images/The Yampa River.jpeg" alt="The Yampa Rivert" width="100%" height="900">
-            <img class="rafting" src="images/The Yampa River-1.jpeg" alt="Yampa River Rafting" width="100%" height="100%">
-            <h2>Yampa River Rafting</h2>
-            <p>
-                The Yampa River through the Dinosaur National Monument has it all! As the last free-flowing river in the entire Colorado River drainage, 
-                the Yampa is incredibly wild in May and June. The Rocky Mountain spring run off creates big roaring rapids with an average descent of 12-14 feet per mile. 
-                The gradient at Teepee Rapid is an amazing 31 feet per mile!
-                Raft alongside 2000-foot high white canyon walls with black tiger-stripes; hike side canyons to prehistoric rock art and abandoned caves. 
-                The Yampa joins the Green River at Echo Park for a 180-degree swing around beautiful Steamboat Rock, and then continues through the canyons and Split Mountain Gorge.
-                The whitewater is exciting and heart pounding while the slower river sections offer spectacular scenery to quiet the soul. 
-                Ancient American history and geological features fascinate your thirsty mind; and star-studded nights evoke thought and appreciation for our place on Earth.
-            </p>
+    <main  class="river-grid">
+        <section class="river-1">
+            <section class="river-imgs">
+                <img class="Yampa" src="images/The Yampa River.jpeg" alt="The Yampa Rivert">
+                <img class="Yampa" src="images/The Yampa River-1.jpeg" alt="Yampa River Rafting">
+            </section>
+            <section class="river-text">
+                <h2>Yampa River Rafting</h2>
+                <p>
+                    The Yampa River through the Dinosaur National Monument has it all! As the last free-flowing river in the entire Colorado River drainage, 
+                    the Yampa is incredibly wild in May and June. The Rocky Mountain spring run off creates big roaring rapids with an average descent of 12-14 feet per mile. 
+                    The gradient at Teepee Rapid is an amazing 31 feet per mile!
+                    Raft alongside 2000-foot high white canyon walls with black tiger-stripes; hike side canyons to prehistoric rock art and abandoned caves. 
+                    The Yampa joins the Green River at Echo Park for a 180-degree swing around beautiful Steamboat Rock, and then continues through the canyons and Split Mountain Gorge.
+                    The whitewater is exciting and heart pounding while the slower river sections offer spectacular scenery to quiet the soul. 
+                    Ancient American history and geological features fascinate your thirsty mind; and star-studded nights evoke thought and appreciation for our place on Earth.
+                </p>
+            </section>
         </section>
-        <section id="river-2">
-            <img class="river" src="images/Colorado River Rafting.jpeg" alt="The Colorado River">
-            <img class="rafting" src="images/Colorado River Rafting-1.jpeg" alt="Colorado River Rafting" width="100%" height="900">
+            <section class="river-2">
+                <section class="river-imgs2">
+                <img class="Colorado" src="images/Colorado River Rafting.jpeg" alt="The Colorado River" >
+                <img class="Colorado" src="images/Colorado River Rafting-1.jpeg" alt="Colorado River Rafting" >
+            </section>
+            <section class="river-text2">
             <h2>Colorado River Rafting</h2>
             <p>
                 The Colorado River is the lifeblood of the entire southwestern United States. 
@@ -64,6 +71,7 @@
                 The river’s heart pounding rapids and gentle, soothing flows are just the vehicle for your transport into a world beyond anything familiar. 
                 The 2,000-foot-high red rock canyon walls reveal a fresh, amazing view with every twist and turn. 
             </p>
+            </section>
         </section>
     </main>
     <footer>
@@ -83,6 +91,7 @@
         </div>
     </footer>
 
-</div>    
+</div>
+<script src="./js/rivers.js"></script>
 </body>
 </html>
