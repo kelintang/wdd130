@@ -258,6 +258,7 @@ h2:hover {
     border-radius: 20px;
     text-indent: 50px;
     padding:30px;
+    box-shadow: 10px 10px 15px #6f7364;
     
 }
 
@@ -288,6 +289,8 @@ h2:hover {
     border-radius: 20px;
     text-indent: 50px;
     padding:30px;
+    box-shadow: 10px 10px 15px #6f7364;
+    
 }
 
 /* .rapids-card{
