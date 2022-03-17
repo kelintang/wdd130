@@ -112,6 +112,11 @@ h4{
     color: white;
     font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
 }
+h5{
+    color: #d9c2a3;
+    font-family: "Comforter", Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
 footer h3{
     color: white;
     text-align: left;

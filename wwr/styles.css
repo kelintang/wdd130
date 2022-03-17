@@ -50,6 +50,7 @@ nav a{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    font-family: "Zilla Slab", Geneva, Tahoma, sans-serif;
 } 
 .book:hover{
     background-color: #fcfbfb;
@@ -189,10 +190,10 @@ h2 {
     margin: 0;
 }
 
-h2:hover {
+/* h2:hover {
     color: cadetblue;
-    font-family: "Supermercado One", Geneva, Tahoma, sans-serif;
-} 
+    
+}  */
 
 .main_img {
     width: 2%;
