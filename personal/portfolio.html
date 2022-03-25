@@ -1,68 +1,159 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Burce </title>
-    <link rel="stylesheet" href="portfolio.css">
+
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <!-- <style>
+        .mySlides {display:none;}
+    </style> -->
 </head>
+
 <body>
+
     <div id="container">
 
-    <header>
-        <a href="index.html" id="logo_link">
-            <img class="logo" src="./ images/peppa.jpg" alt="Logo image">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="aboutme.html">About/Contact Me</a>
-        </nav>  
-    </header>
-    <div id="mainpic">
-        <div id="mainpic-box">
-            <img id="main-img" src="./ images/min.jpg" alt="A girl wtih umbrella">
+        <div id="hero">
+
+            <div id="mainpic">
+                <img id="main-img" src="./ images/page2main.jpg" alt="A girl wtih umbrella" >
+
+                <section id="main-msg">
+                    <h1>“The best thing about a picture is that it never changes, even when the people in it do.”</h1>
+                </section>
+            </div>
+
+            <header>
+                <a href="index.html" id="logo">
+                    <img class="logo" src="./ images/peppa.png" alt="Logo image">
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="aboutme.html">About/Contact Me</a>
+                </nav> 
+            </header>
+
         </div>
-        <section id="main-msg">
-            <h1>Photography can only represent the present.</h1>
-            <h1>Once photographed, the subject becomes part of the past.</h1>
-        </section>
-    </div>
 
-    <main class="portfolio-pic">
-        <section >
-            <img class="cover-img" src="./ images/0000145900041.jpg" alt="Cover for Candid Photogrqphy">
-            <h2>Candid Photogrqphy</h2>
-            <a class='picfile' href="">→</a>
-        </section>
-        <section >
-            <img class="cover-img" src="./ images/DSC6343.jpg" alt="Cover for Portrait Photogrqphy">
-            <h2>Portrait Photogrqphy</h2>
-            <a class='picfile' href="">→</a>
-        </section>
-        <section >
-            <img class="cover-img" src="./ images/_DSC6196.jpg" alt="Cover for Commercial Photogrqphy">
-            <h2>Commercial Photogrqphy</h2>
-            <a class='picfile' href="">→</a>
-        </section> 
-  </main>
+    <main class="pictures">
+        <div class="Candidpo">
+            <img class="Candid" src="./ images/street1.jpg" >
+            <img class="Candid" src="./ images/street2.jpg" >
+            <img class="Candid" src="./ images/street3.jpg" >
+            <img class="Candid" src="./ images/street4.jpg" >
+            <h7>Candid Photogrqphy</h7>
+        </div>
+        <div class="Portraitpo">
+            <img class="Portrait" src="./ images/people.jpg" >
+            <img class="Portrait" src="./ images/people2.jpg" >
+            <img class="Portrait" src="./ images/people3.jpg" >
+            <img class="Portrait" src="./ images/people4.jpg" >
+            <h7>Portrait Photogrqphy</h7>
+        </div>
+        <div class="Commercialpo">
+            
+            <img class="Commercial" src="./ images/water_bowl.jpg" >
+            <img class="Commercial" src="./ images/noodle_bowl.jpg" >
+            <img class="Commercial" src="./ images/bowl.jpg" >
+            <h7>Commercial Photogrqphy</h7>
+            
+        </div>
+          
+        <!-- <figure>
+            <img src="./ images/man.jpg" alt="This is figure image">
+            <div class='link'>
+                <a class='linktopo' href="portfolio.html">Candid Photogrqphy</a>
+            </div>
+        </figure>
 
-    <footer>
+        <figure>
+            <img src="./ images/girl.jpg" alt="This is figure image">
+            <div class='link'>
+                <a class='linktopo' href="portfolio.html">Portrait Photogrqphy</a>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./ images/meal.jpg" alt="This is figure image">
+            <div class='link'>
+                <a class='linktopo' href="portfolio.html">Commercial Photogrqphy</a>
+            </div>
+        </figure> -->
+
+    </main>
+
+    <footer id="radius" >
+        <div id="footergrid">
+        <div id="pagelink">
         <h3><a href="index.html" target="_blank">Home</a></h3>
         <h3><a href="portfolio.html" target="_blank">Portfolio</a></h3>
         <h3><a href="contactus.html" target="_blank">About/Contact Me</a></h3>
+        </div>
         <div class="social">
             <a href="https://instagram.com" target="_blank">
                 <img src="./ images/instagram.png" alt="instagram icon">
             </a>
             <a href="https://facebook.com" target="_blank">
                 <img src="./ images/facebook.png" alt="fb icon">
-            </a> 
+            </a>
         </div>
-        <h3>Peppa Pig Photography &copy; 2022 - kelin Tang</h3>
+        </div>
+        <h5>Peppa Pig Photography &copy; 2022 - kelin Tang</h5>
     </footer>
-</div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        carousell();
+        carouselll();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("Commercial");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+
+        function carousell() {
+          var r;
+          var y = document.getElementsByClassName("Candid");
+          for (r = 0; r < y.length; r++) {
+            y[r].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > y.length) {myIndex = 1}    
+          y[myIndex-1].style.display = "block";  
+          setTimeout(carousell, 3000); // Change image every 2 seconds
+        }
+
+        function carouselll() {
+          var s;
+          var d = document.getElementsByClassName("Portrait");
+          for (s = 0; s < d.length; s++) {
+            d[s].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > d.length) {myIndex = 1}    
+          d[myIndex-1].style.display = "block";  
+          setTimeout(carouselll, 3000); // Change image every 2 seconds
+        }
+        </script>
 </body>
 
 </html>
