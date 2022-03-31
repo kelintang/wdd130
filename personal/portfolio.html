@@ -77,6 +77,7 @@
         <h3><a href="index.html" target="_blank">Home</a></h3>
         <h3><a href="portfolio.html" target="_blank">Portfolio</a></h3>
         <h3><a href="contactus.html" target="_blank">About/Contact Me</a></h3>
+        <h3><a href="site-plan.html" target="_blank">Personal Site Plan</a></h3>
         </div>
         <div class="social">
             <a href="https://instagram.com" target="_blank">
@@ -92,6 +93,8 @@
     </div>
     <script>
         var myIndex = 0;
+        var secondIndex = 0;
+        var thirdIndex = 0;
         carousel();
         carousell();
         carouselll();
@@ -114,9 +117,9 @@
           for (r = 0; r < y.length; r++) {
             y[r].style.display = "none";  
           }
-          myIndex++;
-          if (myIndex > y.length) {myIndex = 1}    
-          y[myIndex-1].style.display = "block";  
+          secondIndex++;
+          if (secondIndex > y.length) {secondIndex = 1}    
+          y[secondIndex-1].style.display = "block";  
           setTimeout(carousell, 3000); // Change image every 2 seconds
         }
 
@@ -126,9 +129,9 @@
           for (s = 0; s < d.length; s++) {
             d[s].style.display = "none";  
           }
-          myIndex++;
-          if (myIndex > d.length) {myIndex = 1}    
-          d[myIndex-1].style.display = "block";  
+          thirdIndex++;
+          if (thirdIndex > d.length) {thirdIndex = 1}    
+          d[thirdIndex-1].style.display = "block";  
           setTimeout(carouselll, 3000); // Change image every 2 seconds
         }
         </script>

@@ -121,6 +121,7 @@ footer h5 {
     padding-bottom: 20px;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 #radius {
@@ -178,33 +179,32 @@ h2, p{
 h7{
     font-family: 'Josefin Slab', serif;
     color: #005f73;
+    font-size: 20px;
 }
 .Commercial{
     display:none;  
     margin: 0 auto;
-    max-width: 500px;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    height: 500px;
+    padding-bottom: 10px;
+    padding-top: 80px;
 }
 
 .Candid{
     display:none;  
     margin: 0 auto;
-    max-width: 500px;
-    max-height: 500px;
+    height: 500px;
     display: flex;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 80px;
 }
 
 .Portrait{
     display:none;  
     margin: 0 auto;
-    max-width: 500px;
-    max-height: 500px;
+    height: 500px;
     display: flex;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 80px;
 }
 
 
