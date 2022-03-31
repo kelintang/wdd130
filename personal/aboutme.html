@@ -55,14 +55,40 @@
              If everything seems great, let's set a time to shoot! 
              I am actively on Instagram. 
              Feel free to reach out to me there.
-            </p>  
+            </p>
+            <form action="/my-handling-form-page" method="post">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <label for="name">Your Full Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="phone" id="phone" name="user_phone">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:*</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+           </form>  
         </section>
+        <div id="feedback"></div>
+       
     </main>
     
-    <video controls>
+    <!-- <video controls>
         <source src="./ images/open.M4V" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
+      </video> -->
 
     <footer id="radius" >
         <div id="footergrid"> 
@@ -70,6 +96,7 @@
         <h3><a href="index.html" target="_blank">Home</a></h3>
         <h3><a href="portfolio.html" target="_blank">Portfolio</a></h3>
         <h3><a href="contactus.html" target="_blank">About/Contact Me</a></h3>
+        <h3><a href="site-plan.html" target="_blank">Personal Site Plan</a></h3>
         </div>
         <div class="social">
             <a href="https://instagram.com" target="_blank">
@@ -82,6 +109,23 @@
         </div>
         <h5>Peppa Pig Photography &copy; 2022 - kelin Tang</h5>
     </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
     </div>
 </body>
 

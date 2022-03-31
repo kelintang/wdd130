@@ -121,6 +121,7 @@ footer h5 {
     padding-bottom: 20px;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 #radius {
@@ -152,12 +153,13 @@ main a:hover {
 main{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    /* grid-template-rows: 1fr ; */
 }
 #img{
     grid-column: 1/2;
     /* grid-row: 2/3; */
     padding-left: 50px;
+    margin-top: 45px;
 
     
 }
@@ -167,12 +169,113 @@ main{
     /* grid-row: 2/3; */
     padding-right: 80px;
     padding-left: 80px;
+    
 }
 
 h2, p{
     text-align: justify;
 }
 
+h2{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+    color:   rgba(198,125,72,1);
+}
+
+p{
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    
+}
+
+/* video{
+    padding-top: 150px;
+    width: 100%;
+    height: 500px;
+} */
+
+ form {
+    /* margin: 0 auto; */
+    /* width: 400px; */
+    /* padding: 1em; */
+    /* margin-top: 8em; */
+    text-align: left;
+  } 
+  
+  ul {
+    list-style: none;
+    padding-left: 35%;
+    /* margin-left: 110%; */
+    
+  }
+
+  li{
+    font-family: 'Josefin Slab', serif;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 250px;
+    text-align:left;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    text-align: left; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+  #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;       
+  }
+  .moveDown {
+      margin-top: 3em;
+  }
 @media screen and (max-width: 600px) {
     .social img {
         width: 45px;
